@@ -16,14 +16,14 @@ public class Fahrenheit extends Temperature {
 
     @Override
     public Temperature toFahrenheit() {
-        return new Fahrenheit(getValue());
+        return new Fahrenheit((getValue() * 9/5) -32);
     }
 
 
     public String toString()
     {
         // TODO: Complete this method
-        return "";
+        return Float.toString(getValue());
     }
 }
 
